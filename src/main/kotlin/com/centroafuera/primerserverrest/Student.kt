@@ -9,7 +9,7 @@ import javax.persistence.Id
 class Student(var name: String, var surname : String) {
     @Id
     @GeneratedValue
-    private val id: Long? = null
+    private val id: Long? = null //Genera el valor aleatoriamente
 
     override fun equals(other: Any?): Boolean {
         if (other is Student){
